@@ -1,11 +1,9 @@
-[
-    {
-        "type": "AnswerGenerator",
+{
+    "AnswerGenerator": {
         "description": "Based on your documents, generates a novel text as an answer.",
         "docs_link": "https://docs.cloud.deepset.ai/docs/answergenerator"
     },
-    {
-        "type": "OpenAIAnswerGenerator",
+    "OpenAIAnswerGenerator": {
         "description": "Based on your documents, generates a novel text as an answer.",
         "docs_link": "https://docs.cloud.deepset.ai/docs/answergenerator#openaianswergenerator",
         "params": {
@@ -18,39 +16,33 @@
             "presence_penalty": "Encourages the model to generate concise text by penalizing redundant words."
         } 
     },
-    {
-        "type": "Seq2SeqGenerator",
+    "Seq2SeqGenerator": {
         "description": "A sequence-to-sequence generator that uses Text2Text models from Hugging Face.",
         "docs_link": "https://docs.cloud.deepset.ai/docs/answergenerator#seq2seqgenerator"
     },
-    {
-        "type": "DeepsetCloudDocumentStore",
+    "DeepsetCloudDocumentStore": {
         "description": "Stores text and metadata and provides them to the Retriever at query time.",
         "docs_link": "https://docs.cloud.deepset.ai/docs/deepsetclouddocumentstore",
         "params": {
             "similarity": "The similarity function to compare document vectors."
         } 
     },
-    {
-        "type": "FileTypeClassifier",
+    "FileTypeClassifier": {
         "description": "Routes files to appropriate file converters based on their extension.",
         "docs_link": "https://docs.cloud.deepset.ai/docs/filetypeclassifier"
-    }
-    {
-        "type": "JoinDocuments",
+    },
+    "JoinDocuments": {
         "description": "Joins the documents fetched by different nodes. Use it to merge separate pipeline branches, for example, the output of two different retrievers. ",
         "docs_link": "https://docs.cloud.deepset.ai/docs/joindocuments",
         "params": {
             "join_mode": "Specifies how to combine the documents."
         } 
     },
-    {
-        "type": "PDFToTextConverter",
+    "PDFToTextConverter": {
         "description": "Converts PDF files into plain-text document objects, which are then stored in the DocumentStore.",
         "docs_link": "https://docs.cloud.deepset.ai/docs/pdftotextconverter",
     },
-    {
-        "type": "PreProcessor",
+    "PreProcessor": {
         "description": "Cleans the documents and splits them up into smaller ones.",
         "docs_link": "https://docs.cloud.deepset.ai/docs/preprocessor",
         "params": {
@@ -61,8 +53,7 @@
             "language": "The language of the documents."
         } 
     },
-    {
-        "type": "PromptNode",
+    "PromptNode": {
         "description": "Uses a large language model to perform NLP tasks. You can specify the task in a PromptTemplate you pass to it.",
         "docs_link": "https://docs.cloud.deepset.ai/docs/promptnode",
         "params": {
@@ -71,13 +62,11 @@
             "top_k": "The number of answers to generate."
         } 
     },
-    {
-        "type": "TfidfRetriever",
+    "TfidfRetriever": {
         "description": "Retrieves documents relevant to the query favoring the ones with most lexical overlap with the query.",
         "docs_link": "https://docs.cloud.deepset.ai/docs/retriever#tfidfretriever"
     },
-    {
-        "type": "BM25Retriever",
+    "BM25Retriever": {
         "description": "A keyword-based retriever that fetches documents relevant to the query based on the frequency and distribution of query terms in the documents.",
         "docs_link": "https://docs.cloud.deepset.ai/docs/retriever#bm25retriever",
         "params": {
@@ -85,13 +74,11 @@
             "top_k": "The number of documents to fetch."
         } 
     },
-    {
-        "type": "FilterRetriever",
+    "FilterRetriever": {
         "description": "A keyword-based retriever that uses filters to fetch documents relevant to the query.",
         "docs_link": "https://docs.cloud.deepset.ai/docs/retriever#filterretriever"
     },
-    {
-        "type": "EmbeddingRetriever",
+    "EmbeddingRetriever": {
         "description": "Uses a transformer model to convert documents and the query into vectors and then fetches the documents most relevant to the query (based on the vector similarity).",
         "docs_link": "https://docs.cloud.deepset.ai/docs/retriever#embeddingretriever",
         "params": {
@@ -101,18 +88,15 @@
             "top_k": "The number of documents to fetch."
         } 
     },
-    {
-        "type": "DensePassageRetriever",
+    "DensePassageRetriever": {
         "description": "Uses separate models to convert the query and the documents into vectors and then fetches the documents most relevant to the query (based on their vector similarity).",
         "docs_link": "https://docs.cloud.deepset.ai/docs/retriever#densepassageretriever-dpr"
     },
-    {
-        "type": "TableReader",
+    "TableReader": {
         "description": "Extracts answers from tables using Hugging Face’s transformers.",
         "docs_link": "https://docs.cloud.deepset.ai/docs/reader#tablereader"
     },
-    {
-        "type": "FARMReader",
+    "FARMReader": {
         "description": "Uses a Hugging Face’s transformer model to extract unique answers from documents.",
         "docs_link": "https://docs.cloud.deepset.ai/docs/reader#farmreader",
         "params": {
@@ -120,29 +104,24 @@
             "context_window_size": "The number of surrounding characters considered as the context of an answer text. Used when displaying the context around the answer."
         } 
     },
-    {
-        "type": "TransformersReader",
+    "TransformersReader": {
         "description": "Extracts answers from documents using Hugging Face tokenizer models. A simple reader with fewer features than the FARMReader.",
         "docs_link": "https://docs.cloud.deepset.ai/docs/reader#transformersreader"
     },
-    {
-        "type": "Shaper",
+    "Shaper": {
         "description": "Changes the data format. Usually used with PromptNode to ensure it receives the input or output it needs.",
         "docs_link": "https://docs.cloud.deepset.ai/docs/shaper"
     },
-    {
-        "type": "TextConverter",
+    "TextConverter": {
         "description": "Converts files to plain-text document objects pipelines use for search.",
         "docs_link": "https://docs.cloud.deepset.ai/docs/textconverter"
     },
-    {
-        "type": "TransformersQueryClassifier",
+    "TransformersQueryClassifier": {
         "description": "Classifies queries using a transformers model, which makes it sensitive to the syntax of a sentence.",
         "docs_link": "https://docs.cloud.deepset.ai/docs/queryclassifier#transformersqueryclassifier"
     },
-    {
-        "type": "SkLearnQueryClassifier",
+    "SkLearnQueryClassifier": {
         "description": "Classifies queries using a lightweight sklearn model.",
         "docs_link": "https://docs.cloud.deepset.ai/docs/queryclassifier#sklearnqueryclassifier"
     }
-]
+}
