@@ -17,7 +17,7 @@
         } 
     },
     "Seq2SeqGenerator": {
-        "description": "A sequence-to-sequence generator that uses Text2Text models from Hugging Face.",
+        "description": "A sequence-to-sequence generator that uses Text2Text models from Hugging Face.",
         "docs_link": "https://docs.cloud.deepset.ai/docs/answergenerator#seq2seqgenerator"
     },
     "DeepsetCloudDocumentStore": {
@@ -39,7 +39,7 @@
         } 
     },
     "PDFToTextConverter": {
-        "description": "Converts PDF files into plain-text document objects, which are then stored in the DocumentStore.",
+        "description": "Converts PDF files into plain-text document objects, which are then stored in the DocumentStore.",
         "docs_link": "https://docs.cloud.deepset.ai/docs/pdftotextconverter"
     },
     "PreProcessor": {
@@ -93,11 +93,11 @@
         "docs_link": "https://docs.cloud.deepset.ai/docs/retriever#densepassageretriever-dpr"
     },
     "TableReader": {
-        "description": "Extracts answers from tables using Hugging Face’s transformers.",
+        "description": "Extracts answers from tables using Hugging Face's transformers.",
         "docs_link": "https://docs.cloud.deepset.ai/docs/reader#tablereader"
     },
     "FARMReader": {
-        "description": "Uses a Hugging Face’s transformer model to extract unique answers from documents.",
+        "description": "Uses a Hugging Face's transformer model to extract unique answers from documents.",
         "docs_link": "https://docs.cloud.deepset.ai/docs/reader#farmreader",
         "params": {
             "model_name_or_path": "Path of name of the model to use with the reader.",
