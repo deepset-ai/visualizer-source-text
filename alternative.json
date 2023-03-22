@@ -1,0 +1,19 @@
+{
+    "AnswerGenerator": {
+        "description": "Based on your documents, generates a novel text as an answer.",
+        "docs_link": "https://docs.cloud.deepset.ai/docs/answergenerator"
+    },
+    "OpenAIAnswerGenerator": {
+        "description": "Based on your documents, generates a novel text as an answer.",
+        "docs_link": "https://docs.cloud.deepset.ai/docs/answergenerator#openaianswergenerator",
+        "params": {
+            "api_key": "Your OpenAI API key. Needed to use the OpenAI model.", 
+            "model": "The OpenAI model you want to use.",
+            "max_tokens": "The maximum number of tokens the generated answer can have.",
+            "top_k": "The number of answers to generate.",
+            "temperature": "Determines how creative the answers are. A lower value means a more realistic answer.",
+            "frequency_penalty": "Encourages the model to use diverse vocabulary by penalizing frequent occurrences of the same tokens.",
+            "presence_penalty": "Encourages the model to generate concise text by penalizing redundant words."
+        } 
+    }
+}
