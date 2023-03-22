@@ -40,7 +40,7 @@
     },
     "PDFToTextConverter": {
         "description": "Converts PDF files into plain-text document objects, which are then stored in the DocumentStore.",
-        "docs_link": "https://docs.cloud.deepset.ai/docs/pdftotextconverter",
+        "docs_link": "https://docs.cloud.deepset.ai/docs/pdftotextconverter"
     },
     "PreProcessor": {
         "description": "Cleans the documents and splits them up into smaller ones.",
